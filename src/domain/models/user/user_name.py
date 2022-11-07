@@ -1,4 +1,4 @@
-from src.exception import ArgumentException
+from src.domain.models.exception import ArgumentException
 
 
 class UserName:

@@ -9,7 +9,24 @@
 	"extensions": [
 		"ms-python.python",
 		"njpwerner.autodocstring"
-	]
+	],
+	"settings": {
+		"python.linting.enabled": true,
+		"python.linting.pylintEnabled": false,
+		"python.linting.mypyEnabled": true,
+		"python.linting.flake8Enabled": true,
+		"python.linting.lintOnSave": true,
+		"python.formatting.provider": "black",
+		"editor.formatOnSave": true,
+		"autoDocstring.docstringFormat": "numpy",
+		"python.linting.flake8Args": [
+			"--max-line-length=119",
+			"--ignore=E203,W503,W504"
+		],
+		"python.formatting.blackArgs": [
+			"--line-length=110"
+		]
+	}
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Uncomment the next line to run commands after the container is created - for example installing curl.
